@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+   
+   <TextView 
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:textColor="@color/white"
+	  android:text="@string/number_label"
+	  android:id="@+id/number_label"
+	  android:layout_marginLeft="13dp"
+	  />
+    
+   <TextView 
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:id="@+id/test_country"
+		  android:text="@string/slovakia"
+		  android:layout_centerHorizontal="true"
+		  android:contentDescription="@string/slovakia"
+		  android:textSize="25dip"
+		  android:textColor="@color/white"
+		  android:paddingTop="30dip"
+		  android:paddingBottom="30dip"
+		  android:layout_marginBottom="40dip"
+		  />
+   <RadioGroup 
+      android:id="@+id/group"
+      android:onClick="onRGClick"
+      android:orientation="vertical"
+      android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:paddingBottom="10dp"
+	  android:paddingLeft="5dp"
+	  android:layout_below="@id/test_country"
+	  >
+      <RadioButton
+          android:id="@+id/option1"
+          android:text="@string/option1"
+      	  android:textColor="@color/white"
+      	  android:layout_marginBottom="10dip"
+      	  android:button="@drawable/radio_selector"
+      	  android:textSize="20dip" />
+      <RadioButton
+          android:id="@+id/option2"
+          android:text="@string/option2"
+          android:textColor="@color/white"
+          android:layout_marginBottom="10dip"
+          android:button="@drawable/radio_selector"
+          android:textSize="20dip" />
+      <RadioButton
+          android:id="@+id/option3"
+          android:text="@string/option3"
+          android:textColor="@color/white"
+          android:layout_marginBottom="10dip"
+          android:button="@drawable/radio_selector"
+          android:textSize="20dip" />
+      <RadioButton
+          android:id="@+id/option4"
+          android:text="@string/option4"
+          android:textColor="@color/white"
+          android:button="@drawable/radio_selector"
+          android:textSize="20dip" />
+   </RadioGroup>
+   
+   <ImageView 
+	  android:id="@+id/next_image"
+	  android:src="@drawable/next_bigger"
+	  android:layout_centerHorizontal="true"
+	  android:layout_width="32dp"
+	  android:layout_height="32dp"
+	  android:layout_alignParentRight="true"
+	  android:layout_centerVertical="true"
+	  android:layout_marginRight="10dp"
+	  android:focusable="false"
+	  android:contentDescription="@string/next_content"
+	  />
+   
+    <!-- 
+    <Button
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:background="@layout/rounded_corner_button"
+	  android:drawableLeft="@drawable/next"
+	  android:id="@+id/button_next"
+	  android:layout_alignParentRight="true"
+	  android:layout_centerVertical="true"
+	  android:layout_marginRight="10dp"
+	  />
+	-->
+   
+   
+   <Button
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:text="@string/next"
+	  android:id="@+id/button_next"
+	  android:layout_alignParentBottom="true"
+	  android:visibility="invisible"
+	  />
+	
+
+</RelativeLayout>
+

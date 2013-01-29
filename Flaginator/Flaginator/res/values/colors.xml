@@ -1,0 +1,10 @@
+<resources>
+	<color name="main_background">#BABABA</color>
+    <color name="button_background">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_list">#202020</color>
+    <color name="green">#458B00</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFFF33</color>
+</resources>

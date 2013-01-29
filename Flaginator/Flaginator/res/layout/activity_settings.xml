@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    android:orientation="vertical"
+	    android:padding="5dp">
+	    
+		<ListView 
+		    android:id="@+id/list"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/yellow"
+		    android:background="@drawable/rounded_corner_shape_listview"
+		    android:layout_marginBottom="10dp">
+		    
+		</ListView>
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    xmlns:tools="http://schemas.android.com/tools"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" 
+		    android:orientation="vertical"
+		    android:background="@drawable/rounded_corner_shape_listview"
+		    android:padding="5dp">
+		
+			<TextView 
+			    android:id="@+id/progress"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:padding="5dp"
+			    android:textSize="15dp"    
+			    android:textColor="@color/white"
+			    android:background="@color/black_list">
+			</TextView>
+			
+			<SeekBar
+				android:id="@+id/seek"
+				android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:max="30"
+			    android:progress="10"/>
+		</LinearLayout>
+	
+		
+		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    	android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" 
+		    android:orientation="horizontal"
+		    android:layout_marginTop="20dp"
+		    android:background="@drawable/rounded_corner_shape_listview">
+			<TextView
+			        android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:padding="5dp"
+				    android:text="@string/timer"
+				    android:textSize="15dp"    
+				    android:textColor="@color/white"
+				    android:layout_alignParentLeft="true"
+				    android:background="@color/black_list"/>
+			
+			<ToggleButton 
+			    android:id="@+id/btn_toggle"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textOn="ON"
+			    android:textOff="OFF"
+			    android:background="@drawable/rounded_corner_shape_listview"
+			    android:layout_alignParentRight="true"/>
+		</RelativeLayout>
+		
+	<!-- 
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:orientation="horizontal"
+	    android:background="@drawable/rounded_corner_shape_listview">
+	    <TextView
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:padding="5dp"
+		    android:text="@string/timer"
+		    android:textSize="15dp"    
+		    android:textColor="@color/white"
+		    android:background="@color/black_list"
+		    android:layout_alignParentLeft="true"/>
+	    
+	    <Switch 
+		    android:id="@+id/switch_timer"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:checked="false"
+		    android:textOn="ON"
+		    android:textOff="OFF"
+		    android:layout_alignParentRight="true"/>
+	</RelativeLayout>
+	-->
+	
+  </LinearLayout>
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:tools="http://schemas.android.com/tools"
+	  android:layout_width="fill_parent"
+	  android:layout_height="30dp" 
+	  android:orientation="horizontal"
+	  android:background="@color/black_list"
+	  android:layout_alignParentBottom="true">
+      <Button
+		    android:id="@+id/btnSave"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@color/black_list"
+		    android:textColor="@color/white"
+		    android:text="@string/button_save"
+		    android:textSize="20dp"
+		    android:layout_alignParentLeft="true"/>
+		
+		<!-- 
+		<Button
+		        android:id="@+id/btnSetDefault"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@color/black_list"
+		        android:textColor="@color/white"
+		        android:textSize="20dp"
+		        android:text="@string/button_set_default"
+		        android:layout_alignParentRight="true"/>
+		-->
+		
+  </RelativeLayout>
+</RelativeLayout>

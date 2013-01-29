@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <array name="continent">
+		<item>@string/europe_label</item>
+		<item>@string/asia_label</item>
+		<item>@string/africa_label</item>
+		<item>@string/americas_label</item>    	        
+    </array>
+</resources>

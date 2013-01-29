@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="@color/main_background"
+    android:padding="10dp">
+    
+    <Button
+        android:id="@+id/btnStart"
+        android:background="@layout/rounded_corner_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_start"
+        android:gravity="left"
+        android:drawablePadding="10dp"
+        android:layout_marginBottom="5dp"
+        android:drawableLeft="@drawable/start_icon"/>
+    
+    <Button
+        android:id="@+id/btnMode"
+        android:background="@layout/rounded_corner_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_settings"
+        android:gravity="left"
+        android:drawablePadding="10dp"
+        android:layout_marginBottom="5dp"
+        android:drawableLeft="@drawable/settings_icon"/>
+    
+    <Button
+        android:id="@+id/btnScore"
+        android:background="@layout/rounded_corner_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_score"
+        android:gravity="left"
+        android:drawablePadding="10dp"
+    	android:layout_marginBottom="5dp"
+    	android:drawableLeft="@drawable/score_icon"/>
+    
+     <Button
+        android:id="@+id/btnInfo"
+        android:background="@layout/rounded_corner_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_about"
+        android:gravity="left"
+        android:drawablePadding="10dp"
+        android:layout_marginBottom="5dp"
+        android:drawableLeft="@drawable/info_icon"/>
+    
+    <Button
+        android:id="@+id/btnExit"
+        android:background="@layout/rounded_corner_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_exit"
+        android:gravity="left"
+        android:drawablePadding="10dp"
+    	android:layout_marginBottom="5dp"
+        android:drawableLeft="@drawable/exit_icon"/>
+    
+</LinearLayout>

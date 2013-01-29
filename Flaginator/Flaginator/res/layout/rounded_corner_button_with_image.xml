@@ -1,0 +1,6 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@layout/rounded_corner_button" 
+        android:id="@+id/rounded_corner_button" />
+    <item android:drawable="@drawable/exit_icon" 
+        android:id="@+id/btn_exit" />
+</layer-list>
